@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCraft - StopWatch Web Application</title>
+    <link rel="icon" href="SCT.jpeg" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <p>
+                <span class="minute text" id="min">00</span>
+                <span>:</span>
+                <span class="seconds text" id="seconds" >00</span>
+                <span>.</span>
+                <span class="tens text" id="tens">00</span>
+            </p>
+        </div>
+        <div class="buttons" id="btn-div">
+            <button class="btn-start" id="start" onclick="startTimer(), buttonOp()">START</button>
+            <button class="btn-reset" id="reset" onclick="resetTimer()">RESET</button>
+            <button class="btn-reset" id="reset" onclick="lap()">LAPS</button>
+        </div>
+        <ul class="laps">
+            <button class="lap-clear-button hidden" onclick="clearAll()">Clear All</button>
+        </ul>
+    </div>
+</body>
+</html>
